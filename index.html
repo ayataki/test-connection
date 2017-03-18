@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test Status Connection</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+</head>
+<body>
+	<br />
+	<div class="container">
+	  <div class="row">
+	    <div class="col javascript">
+	      <div class="card text-center">
+	        <div class="card-header">
+	          Javascript
+	        </div>
+	        <div class="card-block">
+	          <p id="javascript" class="card-text"><i class="fa fa-circle text-success" aria-hidden="true"></i> Online</p>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="col jquery">
+	      <div class="card text-center">
+	        <div class="card-header">
+	          jQuery
+	        </div>
+	        <div class="card-block">
+	          <p id="jquery" class="card-text"><i class="fa fa-circle text-success" aria-hidden="true"></i> Online</p>
+	        </div>
+	      </div>
+	    </div>
+	    <div class="col angular" ng-app="ConnectionStatus">
+	      <div class="card text-center">
+	        <div class="card-header">
+	          AngularJS
+	        </div>
+	        <div class="card-block">
+	          <p id="angularjs" class="card-text"><i ng-class="{'fa fa-circle text-success':online, 'fa fa-circle text-danger':!online}" aria-hidden="true"></i> {{ state }}</p>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+	<script src="https://use.fontawesome.com/b7015311f7.js"></script>
+	<script src="js/javascript-test.js"></script>
+	<script src="js/jquery-test.js"></script>
+	<script src="js/angular-test.js"></script>
+</body>
+</html>
